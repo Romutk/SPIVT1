@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Fri, 31 Aug 2012 13:00:33 +0100
+Source: shadow
+Binary: passwd login
+Architecture: source i386
+Version: 1:4.1.4.2+svn3283-3ubuntu5.1
+Distribution: precise-proposed
+Urgency: low
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Roman Utkin <newangel88@mail.ru>
+Description: 
+ login      - system login tools
+ passwd     - change and administer password and group data
+Launchpad-Bugs-Fixed: 523896
+Changes: 
+ shadow (1:4.1.4.2+svn3283-3ubuntu5.1) precise-proposed; urgency=low
+ .
+   * debian/passwd.upstart: Add an upstrat job to clear locks on
+     [shadow-]passwd/group. (LP: #523896).
+Checksums-Sha1: 
+ a25c58eac84a2ac9a20e9c03a7dcfbed37ae6a84 1518 shadow_4.1.4.2+svn3283-3ubuntu5.1.dsc
+ 0b1700bbb485e168a47ecf5909ee06189dcfccf4 333142 shadow_4.1.4.2+svn3283-3ubuntu5.1.diff.gz
+ f1d51b46a066b95b141acdae63305c0bc6e62693 1113410 passwd_4.1.4.2+svn3283-3ubuntu5.1_i386.deb
+ 0c29a3d8f073e3e1a823eb3f44b97685f5f55232 806486 login_4.1.4.2+svn3283-3ubuntu5.1_i386.deb
+Checksums-Sha256: 
+ f966ce170a9c0df78bb224da22d1e731b630f4f7f3d149826c006410d760a5a6 1518 shadow_4.1.4.2+svn3283-3ubuntu5.1.dsc
+ 457d4a7114630b16c795fa361cefc4100105c2d538bee9223f17038330afa3da 333142 shadow_4.1.4.2+svn3283-3ubuntu5.1.diff.gz
+ 15c8389f726fd5765e52039868ba6b5a95d57204902318f73c50424a71dd580e 1113410 passwd_4.1.4.2+svn3283-3ubuntu5.1_i386.deb
+ 65944ea482f32358eaedbbf83977b4397ca4e5b3dbda17d79e274e8da40323bd 806486 login_4.1.4.2+svn3283-3ubuntu5.1_i386.deb
+Files: 
+ f9337772aaa358a7b3a8f21fff51886e 1518 admin required shadow_4.1.4.2+svn3283-3ubuntu5.1.dsc
+ fd2921ad924ff105d5383b1041097629 333142 admin required shadow_4.1.4.2+svn3283-3ubuntu5.1.diff.gz
+ 2e1c457657008aae8189f889297eb5fc 1113410 admin required passwd_4.1.4.2+svn3283-3ubuntu5.1_i386.deb
+ 87e263e41db556d7b2cdc5785e4cb110 806486 admin required login_4.1.4.2+svn3283-3ubuntu5.1_i386.deb
+Original-Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
