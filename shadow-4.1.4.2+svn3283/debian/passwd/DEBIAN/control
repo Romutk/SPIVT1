@@ -1,0 +1,18 @@
+Package: passwd
+Source: shadow
+Version: 1:4.1.4.2+svn3283-3ubuntu5.1
+Architecture: i386
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 2008
+Depends: libc6 (>= 2.15), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), upstart-job, libpam-modules, debianutils (>= 2.15.2)
+Replaces: manpages-tr (<< 1.0.5), manpages-zh (<< 1.5.1-1)
+Section: admin
+Priority: required
+Multi-Arch: foreign
+Homepage: http://pkg-shadow.alioth.debian.org/
+Description: change and administer password and group data
+ This package includes passwd, chsh, chfn, and many other programs to
+ maintain password and group data.
+ .
+ Shadow passwords are supported.  See /usr/share/doc/passwd/README.Debian
+Original-Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>

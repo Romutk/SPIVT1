@@ -1,0 +1,2 @@
+misc:Depends=upstart-job
+shlibs:Depends=libc6 (>= 2.15), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32)

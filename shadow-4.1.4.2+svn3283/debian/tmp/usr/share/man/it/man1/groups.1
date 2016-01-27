@@ -1,0 +1,69 @@
+'\" t
+.\"     Title: groups
+.\"    Author: [FIXME: author] [see http://docbook.sf.net/el/author]
+.\" Generator: DocBook XSL Stylesheets v1.76.1 <http://docbook.sf.net/>
+.\"      Date: 27/01/2016
+.\"    Manual: User Commands
+.\"    Source: User Commands
+.\"  Language: Italian
+.\"
+.TH "GROUPS" "1" "27/01/2016" "User Commands" "User Commands"
+.\" http://bugs.debian.org/507673
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" http://bugs.debian.org/507673
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NOME"
+groups \- mostra i nomi dei gruppi correnti
+.SH "SINOSSI"
+.HP \w'\fBgroups\fR\ 'u
+\fBgroups\fR [\fIuser\fR]
+.SH "DESCRIZIONE"
+.PP
+The
+\fBgroups\fR
+command displays the current group names or ID values\&. If the value does not have a corresponding entry in
+/etc/group, the value will be displayed as the numerical group value\&. The optional
+\fIuser\fR
+parameter will display the groups for the named
+\fIuser\fR\&.
+.SH "NOTA"
+.PP
+Sui sistemi che non supportano l\*(Aqappartenenza a pi\(`u gruppi contemporaneamente, vengono riportate le informazioni da
+/etc/group\&. L\*(Aqutente deve usare
+\fBnewgrp\fR
+o
+\fBsg\fR
+per cambiare gli ID dei gruppi reale ed efficace\&.
+.SH "FILE"
+.PP
+/etc/group
+.RS 4
+Informazioni sugli account di gruppo\&.
+.RE
+.SH "VEDERE ANCHE"
+.PP
+\fBnewgrp\fR(1),
+\fBgetgid\fR(2),
+\fBgetgroups\fR(2),
+\fBgetuid\fR(2)\&.
